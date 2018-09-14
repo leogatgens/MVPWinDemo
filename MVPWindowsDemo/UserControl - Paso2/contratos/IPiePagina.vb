@@ -1,6 +1,6 @@
 ﻿Public Interface IPiePagina
 
-    Event ClickEnMenu As EventHandler
+    Event ClickEnPieDePagina As EventHandler
 
 
 End Interface

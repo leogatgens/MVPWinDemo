@@ -1,6 +1,8 @@
 ﻿Public Interface IGridConMenu
 
-    Event ClickEnMenu As EventHandler
+    Event ClickEnMenuDelGrid As EventHandler
+
+    Event ClickEnGrid As EventHandler
 
 
 End Interface

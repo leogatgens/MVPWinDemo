@@ -5,8 +5,11 @@
     Private ReadOnly Menu As IMenu
     Private ReadOnly Piepagina As IPiePagina
 
-    Sub New()
+    Sub New(ByVal Vista As IVista)
         Try
+
+
+
 
         Catch ex As Exception
 

@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D25F9088-6BFF-4964-984F-0E685390C967}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>MVPWindowsDemo.My.MyApplication</StartupObject>
+    <StartupObject>Sub Main</StartupObject>
     <RootNamespace>MVPWindowsDemo</RootNamespace>
     <AssemblyName>MVPWindowsDemo</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>WindowsForms</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
@@ -77,6 +77,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Presenter-Paso3\VistaPresenter.vb" />
+    <Compile Include="Program.vb" />
     <Compile Include="UserControl - Paso2\contratos\IPiePagina.vb" />
     <Compile Include="UserControl - Paso2\contratos\IGridConMenu.vb" />
     <Compile Include="UserControl - Paso2\contratos\IMenu.vb" />
@@ -98,6 +99,7 @@
     <Compile Include="UserControl - Paso2\PiePagina.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Vista-Paso1\contratos\IVista.vb" />
     <Compile Include="Vista-Paso1\Vista.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -132,6 +134,9 @@
     <EmbeddedResource Include="UserControl - Paso2\GridConMenu.resx">
       <DependentUpon>GridConMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl - Paso2\PiePagina.resx">
+      <DependentUpon>PiePagina.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Vista-Paso1\Vista.resx">
       <DependentUpon>Vista.vb</DependentUpon>
     </EmbeddedResource>
@@ -151,8 +156,6 @@
   <ItemGroup>
     <Content Include="GuiaRead.txt" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Vista-Paso1\contratos\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
