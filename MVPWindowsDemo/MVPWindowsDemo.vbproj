@@ -58,6 +58,9 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="Telerik.WinControls, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="Telerik.WinControls.UI, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="TelerikCommon, Version=2018.1.116.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
   </ItemGroup>
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
@@ -73,11 +76,33 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Vista\Form1.vb">
+    <Compile Include="Presenter-Paso3\VistaPresenter.vb" />
+    <Compile Include="UserControl - Paso2\contratos\IPiePagina.vb" />
+    <Compile Include="UserControl - Paso2\contratos\IGridConMenu.vb" />
+    <Compile Include="UserControl - Paso2\contratos\IMenu.vb" />
+    <Compile Include="UserControl - Paso2\GridConMenu.Designer.vb">
+      <DependentUpon>GridConMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl - Paso2\GridConMenu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl - Paso2\Menu.Designer.vb">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl - Paso2\Menu.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl - Paso2\PiePagina.Designer.vb">
+      <DependentUpon>PiePagina.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl - Paso2\PiePagina.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Vista-Paso1\Vista.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vista\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Vista-Paso1\Vista.Designer.vb">
+      <DependentUpon>Vista.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,11 +122,18 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl - Paso2\GridConMenu.resx">
+      <DependentUpon>GridConMenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vista-Paso1\Vista.resx">
+      <DependentUpon>Vista.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -118,6 +150,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GuiaRead.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Vista-Paso1\contratos\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -2,5 +2,5 @@
 
 1. Crear un form contenedor = vista
 2. Definir la estrucutra de la pantalla en la vista, la colocación el acomodo.
-3. Definir usercontrols para separar la funcionalidad de cada area.
+3. Definir usercontrols para separar la funcionalidad de cada area.(Crear interfaces)
 4. Todo la instancia de controles se debe realizar en el presenter.
