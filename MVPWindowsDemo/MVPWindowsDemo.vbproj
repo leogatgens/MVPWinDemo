@@ -134,6 +134,9 @@
     <EmbeddedResource Include="UserControl - Paso2\GridConMenu.resx">
       <DependentUpon>GridConMenu.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControl - Paso2\Menu.resx">
+      <DependentUpon>Menu.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControl - Paso2\PiePagina.resx">
       <DependentUpon>PiePagina.vb</DependentUpon>
     </EmbeddedResource>

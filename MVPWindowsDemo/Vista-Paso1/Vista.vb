@@ -18,9 +18,14 @@ Public Class Vista
         InitializeComponent()
 
         ' Add any initialization after the InitializeComponent() call.
+        'Inicializa los controles que va utilizar la vista
         MenuEnVista = New Menu() With {.Dock = DockStyle.Fill}
         GridConMenuEnVista = New GridConMenu() With {.Dock = DockStyle.Fill}
         PieEnVista = New PiePagina() With {.Dock = DockStyle.Fill}
 
+        'Ingresar los controles en el lugar deseado de la vista
+        Me.RadPanel4.Controls.Add(PieEnVista)
+        Me.RadPanel5.Controls.Add(GridConMenuEnVista)
+        Me.RadPanel2.Controls.Add(MenuEnVista)
     End Sub
 End Class

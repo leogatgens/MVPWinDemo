@@ -8,7 +8,7 @@
     Sub New(ByVal Vista As IVista)
         Try
 
-
+            Menu = Vista.MenuEnVista
 
 
         Catch ex As Exception

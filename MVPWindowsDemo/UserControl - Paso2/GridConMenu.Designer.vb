@@ -22,16 +22,30 @@ Partial Class GridConMenu
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.RadPanel1 = New Telerik.WinControls.UI.RadPanel()
+        CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'RadPanel1
+        '
+        Me.RadPanel1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RadPanel1.Location = New System.Drawing.Point(0, 0)
+        Me.RadPanel1.Name = "RadPanel1"
+        Me.RadPanel1.Size = New System.Drawing.Size(582, 150)
+        Me.RadPanel1.TabIndex = 0
+        Me.RadPanel1.Text = "RadPanel1"
         '
         'GridConMenu
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.Controls.Add(Me.RadPanel1)
         Me.Name = "GridConMenu"
         Me.Size = New System.Drawing.Size(582, 150)
+        CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
 
+    Friend WithEvents RadPanel1 As Telerik.WinControls.UI.RadPanel
 End Class
