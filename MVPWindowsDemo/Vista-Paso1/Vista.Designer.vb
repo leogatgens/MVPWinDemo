@@ -64,9 +64,9 @@ Partial Class Vista
         'RadPanel4
         '
         Me.RadPanel4.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.RadPanel4.Location = New System.Drawing.Point(0, 350)
+        Me.RadPanel4.Location = New System.Drawing.Point(0, 431)
         Me.RadPanel4.Name = "RadPanel4"
-        Me.RadPanel4.Size = New System.Drawing.Size(800, 100)
+        Me.RadPanel4.Size = New System.Drawing.Size(800, 19)
         Me.RadPanel4.TabIndex = 3
         Me.RadPanel4.Text = "RadPanel4"
         '
@@ -75,11 +75,11 @@ Partial Class Vista
         Me.RadPanel5.Dock = System.Windows.Forms.DockStyle.Fill
         Me.RadPanel5.Location = New System.Drawing.Point(0, 100)
         Me.RadPanel5.Name = "RadPanel5"
-        Me.RadPanel5.Size = New System.Drawing.Size(800, 250)
+        Me.RadPanel5.Size = New System.Drawing.Size(800, 331)
         Me.RadPanel5.TabIndex = 4
         Me.RadPanel5.Text = "RadPanel5"
         '
-        'Form1
+        'Vista
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -89,7 +89,7 @@ Partial Class Vista
         Me.Controls.Add(Me.RadPanel3)
         Me.Controls.Add(Me.RadPanel2)
         Me.Controls.Add(Me.RadPanel1)
-        Me.Name = "Form1"
+        Me.Name = "Vista"
         Me.Text = "Form1"
         CType(Me.RadPanel1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.RadPanel2, System.ComponentModel.ISupportInitialize).EndInit()

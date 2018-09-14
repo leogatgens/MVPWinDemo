@@ -32,9 +32,12 @@ Imports MenuPrincipal.Clases
 
 
             Using vistaInicial = New Vista()
+                Using presenter = New VistaPresenter(vistaInicial)
 
 
-                Application.Run(vistaInicial)
+                    Application.Run(vistaInicial)
+                End Using
+
             End Using
 
         Catch ex As Exception

@@ -9,11 +9,32 @@
         Try
 
             Menu = Vista.MenuEnVista
+            Contenido = Vista.GridConMenuEnVista
+            Piepagina = Vista.PieEnVista
+
+
+            AddHandler Menu.ClickOpcionMenu, AddressOf ManejarClickOpcionMenu
+            AddHandler Contenido.ClickEnGrid, AddressOf ManejarClickEnGrid
+            AddHandler Piepagina.ClickEnPieDePagina, AddressOf ManejarClickEnPieDePagina
+
 
 
         Catch ex As Exception
-
+            MsgBox("Error")
         End Try
+    End Sub
+
+    Private Sub ManejarClickEnPieDePagina(sender As Object, e As EventArgs)
+        MsgBox("Click en Pie de pagina")
+    End Sub
+
+    Private Sub ManejarClickEnGrid(sender As Object, e As EventArgs)
+        MsgBox("Click en grid")
+    End Sub
+
+    Private Sub ManejarClickOpcionMenu(sender As Object, e As EventArgs)
+        MsgBox("Presiono un item del menu")
+
     End Sub
 
 #Region "IDisposable Support"
@@ -49,3 +70,4 @@
 #End Region
 
 End Class
+
