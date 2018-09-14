@@ -33,7 +33,20 @@
     End Sub
 
     Private Sub ManejarClickOpcionMenu(sender As Object, e As EventArgs)
-        MsgBox("Presiono un item del menu")
+        Dim formualarioVista2 As Form = Application.OpenForms("Vista2")
+
+        If formualarioVista2 Is Nothing Then
+            Dim vistaPorMostrar As Vista2 = New Vista2()
+
+            Try
+                Using presentacion = New Vista2Presenter(vistaPorMostrar)
+                    vistaPorMostrar.ShowDialog()
+
+                End Using
+            Catch excepcion As Exception
+                vistaPorMostrar.Close()
+            End Try
+        End If
 
     End Sub
 

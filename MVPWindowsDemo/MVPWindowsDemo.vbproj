@@ -76,6 +76,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Presenter-Paso3\Vista2Presenter.vb" />
     <Compile Include="Presenter-Paso3\VistaPresenter.vb" />
     <Compile Include="Program.vb" />
     <Compile Include="UserControl - Paso2\contratos\IPiePagina.vb" />
@@ -100,6 +101,7 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Vista-Paso1\contratos\IVista.vb" />
+    <Compile Include="Vista-Paso1\contratos\IVista2.vb" />
     <Compile Include="Vista-Paso1\Vista.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +123,12 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Vista-Paso1\Vista2.Designer.vb">
+      <DependentUpon>Vista2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Vista-Paso1\Vista2.vb">
+      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
